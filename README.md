@@ -30,5 +30,5 @@ Asegúrate de tener Postman instalado
 ## Requisitos para la autenticacion y uso de la api
 
 1. Dirigirse al endpoint AUTHENTICATION de la coleccion
-2. En el body ingresar el code que se compartira en la entrevista
+2. En el body ingresar el code, el cual es la AUTH_CODE en las variables de entorno
 3. Pegarle al endpoint de AUTHENTICATION y obtener el token para utlizar en los endpoint que modifiquen los users en la base de datos
