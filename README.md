@@ -18,13 +18,15 @@
     npm install
 ```
 
-3. Levantar la base de datos utilizando docker-compose
+3. Crear el archivo .env con las variables que se han enviado
+
+4. Levantar la base de datos utilizando docker-compose
 
 ```bash
     docker-compose up -d
 ```
 
-4. Ejecutar el proyecto
+5. Ejecutar el proyecto
 
 ```bash
     npm run dev
