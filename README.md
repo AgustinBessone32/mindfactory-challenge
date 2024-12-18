@@ -13,8 +13,22 @@
 
 1. Clonar el repositorio
 2. Instalar las dependencias
+
+```bash
+    npm install
+```
+
 3. Levantar la base de datos utilizando docker-compose
+
+```bash
+    docker-compose up -d
+```
+
 4. Ejecutar el proyecto
+
+```bash
+    npm run dev
+```
 
 ## Instrucciones para usar la colección
 
