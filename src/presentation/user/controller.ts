@@ -13,6 +13,7 @@ export class UserController extends HandleError {
       const users = await this.userService.getAllUsers();
       res.json(users);
     } catch (error) {
+      console.log('error', error);
       this.handleError(error, res);
     }
   };

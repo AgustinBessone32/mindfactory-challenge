@@ -7,29 +7,8 @@ services:
       POSTGRES_DB: ${POSTGRES_DB}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
     env_file:
-      - .env
+      - ./.env
     volumes:
       - ./postgres:/var/lib/postgresql/data
     ports:
       - 5432:5432
-
-  app:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    ports:
-      - '${PORT}:${PORT}'
-    environment:
-      - POSTGRES_URL=${POSTGRES_URL}
-      - POSTGRES_USER=${POSTGRES_USER}
-      - POSTGRES_DB=${POSTGRES_DB}
-      - POSTGRES_PORT=${POSTGRES_PORT}
-      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
-      - AUTH_CODE=${AUTH_CODE}
-      - NODE_ENV=${NODE_ENV}
-      - JWT_SEED=${JWT_SEED}
-      - PORT=${PORT}
-    env_file:
-      - .env
-    depends_on:
-      - postgres-db
